@@ -30,7 +30,7 @@ module.exports = React.createClass({
 							</div>
 						</div>
 						<div className="row">
-							<button className="waves-effect waves-light btn">Register</button>
+							<button className="waves-effect waves-light btn">Sign Up</button>
 						</div>
 					</form>
 				</div>

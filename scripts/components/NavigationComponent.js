@@ -8,6 +8,7 @@ module.exports = React.createClass({
 		});
 	},
 	render: function() {
+		var currentUser = Parse.User.current();
 		var currentPage = Backbone.history.getFragment();
 		console.log(currentPage === 'category/books');
 
@@ -24,13 +25,13 @@ module.exports = React.createClass({
 		}
 		else {
 			links.push(<li key="login" className={currentPage === 'login' 		? 'active' : ''}><a href="#login">Login</a></li>);
-			links.push(<li key="register" className={currentPage === 'register' 	? 'active' : ''}><a href="#register">Register</a></li>);
+			links.push(<li key="register" className={currentPage === 'register' 	? 'active' : ''}><a href="#register">Sign Up</a></li>);
 		}
 
 
 		return (
-			<div className="nav-wrapper">
-				<a href="#" className="brand-logo left">Login Example</a>
+			<div className="nav-wrapper z-depth-1 teal darken-2">
+				<a href="#" className="brand-logo left">Parse Products</a>
 				<ul id="nav-mobile" className="right">
 					{links}
 				</ul>

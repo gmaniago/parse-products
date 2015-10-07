@@ -15,7 +15,7 @@ module.exports = React.createClass({
 			<div className="container">
 				<div className="row">
 					<form className="col s12" onSubmit={this.onLogin}>
-						<h1>Login</h1>
+						<h1>Log In</h1>
 						{errorElement}
 						<div className="row">
 							<div className="input-field col s12">
@@ -30,7 +30,7 @@ module.exports = React.createClass({
 							</div>
 						</div>
 						<div className="row">
-							<button className="waves-effect waves-light btn">Login</button>
+							<button className="waves-effect waves-light btn">Log In</button>
 						</div>
 					</form>
 				</div>

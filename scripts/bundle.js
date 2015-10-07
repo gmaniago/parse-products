@@ -32784,7 +32784,7 @@ module.exports = React.createClass({
 					React.createElement(
 						"h1",
 						null,
-						"Login"
+						"Log In"
 					),
 					errorElement,
 					React.createElement(
@@ -32821,7 +32821,7 @@ module.exports = React.createClass({
 						React.createElement(
 							"button",
 							{ className: "waves-effect waves-light btn" },
-							"Login"
+							"Log In"
 						)
 					)
 				)
@@ -32863,6 +32863,7 @@ module.exports = React.createClass({
 		});
 	},
 	render: function render() {
+		var currentUser = Parse.User.current();
 		var currentPage = Backbone.history.getFragment();
 		console.log(currentPage === 'category/books');
 
@@ -32935,18 +32936,18 @@ module.exports = React.createClass({
 				React.createElement(
 					'a',
 					{ href: '#register' },
-					'Register'
+					'Sign Up'
 				)
 			));
 		}
 
 		return React.createElement(
 			'div',
-			{ className: 'nav-wrapper' },
+			{ className: 'nav-wrapper z-depth-1 teal darken-2' },
 			React.createElement(
 				'a',
 				{ href: '#', className: 'brand-logo left' },
-				'Login Example'
+				'Parse Products'
 			),
 			React.createElement(
 				'ul',
@@ -33031,7 +33032,7 @@ module.exports = React.createClass({
 						React.createElement(
 							"button",
 							{ className: "waves-effect waves-light btn" },
-							"Register"
+							"Sign Up"
 						)
 					)
 				)
@@ -33066,7 +33067,7 @@ var React = require('react');
 var Backbone = require('backbone');
 window.$ = require('jquery');
 window.jQuery = $;
-
+Parse.initialize("f9KSa4QKe5ClS5OVQyHCgCUhwTBRHW62SAWBnqK0", "nlKF8wWAE2QocgPDzaJU6SXlr3LshQapDWkAAkPl");
 var NavigationComponent = require('./components/NavigationComponent');
 var HomeComponent = require('./components/HomeComponent');
 var AddProductComponent = require('./components/AddProductComponent');

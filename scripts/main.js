@@ -3,7 +3,7 @@ var React = require('react');
 var Backbone = require('backbone');
 window.$ = require('jquery');
 window.jQuery = $;
-
+Parse.initialize("f9KSa4QKe5ClS5OVQyHCgCUhwTBRHW62SAWBnqK0", "nlKF8wWAE2QocgPDzaJU6SXlr3LshQapDWkAAkPl");
 var NavigationComponent = require('./components/NavigationComponent');
 var HomeComponent = require('./components/HomeComponent');
 var AddProductComponent = require('./components/AddProductComponent');
