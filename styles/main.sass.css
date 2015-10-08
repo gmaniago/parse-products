@@ -1,5 +1,8 @@
 body {
   font-family: Coda; }
 
-nav .brand-logo {
+h1, nav .brand-logo {
   padding-left: 1em; }
+
+div.col.s12.m6.l3 {
+  border-left: 1em; }

@@ -28,9 +28,8 @@ module.exports = React.createClass({
 			links.push(<li key="register" className={currentPage === 'register' 	? 'active' : ''}><a href="#register">Sign Up</a></li>);
 		}
 
-
 		return (
-			<div className="nav-wrapper z-depth-1 teal darken-2">
+			<div className="nav-wrapper z-depth-1 blue-grey darken-4">
 				<a href="#" className="brand-logo left">Parse Products</a>
 				<ul id="nav-mobile" className="right">
 					{links}
@@ -44,3 +43,5 @@ module.exports = React.createClass({
 		this.props.router.navigate('', {trigger: true});
 	}
 })
+
+

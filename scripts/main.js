@@ -5,18 +5,24 @@ window.$ = require('jquery');
 window.jQuery = $;
 Parse.initialize("f9KSa4QKe5ClS5OVQyHCgCUhwTBRHW62SAWBnqK0", "nlKF8wWAE2QocgPDzaJU6SXlr3LshQapDWkAAkPl");
 
-
+var RegisterComponent = require('./components/RegisterComponent');
 var NavigationComponent = require('./components/NavigationComponent');
 var HomeComponent = require('./components/HomeComponent');
-var AddProductComponent = require('./components/AddProductComponent');
 var LoginComponent = require('./components/LoginComponent');
-var BooksComponent = require('./components/BooksComponent');
+
+var AddProductComponent = require('./components/AddProductComponent');
 var ProductDetailsComponent = require('./components/ProductDetailsComponent');
+var BooksComponent = require('./components/BooksComponent');
 var ElectronicsComponent = require('./components/ElectronicsComponent');
 var ClothingComponent = require('./components/ClothingComponent');
-var RegisterComponent = require('./components/RegisterComponent');
+
+
 
 var app = document.getElementById('app');
+
+$(document).ready(function(){
+    $('.slider').slider({full_width: true});
+});
 
 var Router = Backbone.Router.extend({
 	routes: {
