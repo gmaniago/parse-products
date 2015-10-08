@@ -25,12 +25,25 @@ module.exports = React.createClass({
 		var productElements = this.state.products
 		.map(function(product) {
 			return(
-				<div>
-					<div>{product.get('name')}</div>
-					<div>{product.get('description')}</div>
-					<div>{product.get('type')}</div>
-					<div>{product.get('price')}</div>
-				</div>
+				<table>
+			        <thead>
+				          <tr>
+				              <th data-field="id">Name</th>
+				              <th data-field="name">Description</th>
+				              <th data-field="price">Type</th>
+				              <th data-field="price">Price</th>
+				          </tr>
+			        </thead>
+
+			        <tbody>
+				          <tr>
+							<td>{product.get('name')}</td>
+							<td>{product.get('description')}</td>
+							<td>{product.get('type')}</td>
+							<td>{product.get('price')}</td>
+				          </tr>
+			        </tbody>
+		      	</table>
 			);
 		});
 			return (

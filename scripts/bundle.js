@@ -32652,7 +32652,7 @@ module.exports = React.createClass({
 		e.preventDefault();
 		var newProduct = new ProductModel({
 			name: this.refs.name.getDOMNode().value,
-			price: this.refs.price.getDOMNode().value,
+			price: parseFloat(this.refs.price.getDOMNode().value),
 			description: this.refs.description.getDOMNode().value,
 			type: this.refs.type.getDOMNode().value,
 			user: Parse.User.current()
@@ -32690,27 +32690,63 @@ module.exports = React.createClass({
 	render: function render() {
 		var productElements = this.state.products.map(function (product) {
 			return React.createElement(
-				'div',
+				'table',
 				null,
 				React.createElement(
-					'div',
+					'thead',
 					null,
-					product.get('name')
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'th',
+							{ 'data-field': 'id' },
+							'Name'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'name' },
+							'Description'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'price' },
+							'Type'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'price' },
+							'Price'
+						)
+					)
 				),
 				React.createElement(
-					'div',
+					'tbody',
 					null,
-					product.get('description')
-				),
-				React.createElement(
-					'div',
-					null,
-					product.get('type')
-				),
-				React.createElement(
-					'div',
-					null,
-					product.get('price')
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'td',
+							null,
+							product.get('name')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('description')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('type')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('price')
+						)
+					)
 				)
 			);
 		});
@@ -32756,27 +32792,63 @@ module.exports = React.createClass({
 	render: function render() {
 		var productElements = this.state.products.map(function (product) {
 			return React.createElement(
-				'div',
+				'table',
 				null,
 				React.createElement(
-					'div',
+					'thead',
 					null,
-					product.get('name')
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'th',
+							{ 'data-field': 'id' },
+							'Name'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'name' },
+							'Description'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'price' },
+							'Type'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'price' },
+							'Price'
+						)
+					)
 				),
 				React.createElement(
-					'div',
+					'tbody',
 					null,
-					product.get('description')
-				),
-				React.createElement(
-					'div',
-					null,
-					product.get('type')
-				),
-				React.createElement(
-					'div',
-					null,
-					product.get('price')
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'td',
+							null,
+							product.get('name')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('description')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('type')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('price')
+						)
+					)
 				)
 			);
 		});
@@ -32822,27 +32894,63 @@ module.exports = React.createClass({
 	render: function render() {
 		var productElements = this.state.products.map(function (product) {
 			return React.createElement(
-				'div',
+				'table',
 				null,
 				React.createElement(
-					'a',
-					{ href: '#product/details/' + product.id },
-					product.get('name')
+					'thead',
+					null,
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'th',
+							{ 'data-field': 'id' },
+							'Name'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'name' },
+							'Description'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'price' },
+							'Type'
+						),
+						React.createElement(
+							'th',
+							{ 'data-field': 'price' },
+							'Price'
+						)
+					)
 				),
 				React.createElement(
-					'div',
+					'tbody',
 					null,
-					product.get('description')
-				),
-				React.createElement(
-					'div',
-					null,
-					product.get('type')
-				),
-				React.createElement(
-					'div',
-					null,
-					product.get('price')
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'td',
+							null,
+							product.get('name')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('description')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('type')
+						),
+						React.createElement(
+							'td',
+							null,
+							product.get('price')
+						)
+					)
 				)
 			);
 		});

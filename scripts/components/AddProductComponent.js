@@ -56,7 +56,7 @@ module.exports = React.createClass({
 		e.preventDefault();
 		var newProduct = new ProductModel ({
 			name: this.refs.name.getDOMNode().value,
-			price: this.refs.price.getDOMNode().value,
+			price: parseFloat(this.refs.price.getDOMNode().value),
 			description: this.refs.description.getDOMNode().value,
 			type: this.refs.type.getDOMNode().value,
 			user: Parse.User.current()
