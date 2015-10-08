@@ -32691,7 +32691,8 @@ module.exports = React.createClass({
 		var productElements = this.state.products.map(function (product) {
 			return React.createElement(
 				'table',
-				null,
+				{ 'class': 'responsive-table centered striped' },
+				'           ',
 				React.createElement(
 					'thead',
 					null,
@@ -32710,7 +32711,7 @@ module.exports = React.createClass({
 						),
 						React.createElement(
 							'th',
-							{ 'data-field': 'price' },
+							{ 'data-field': 'type' },
 							'Type'
 						),
 						React.createElement(
@@ -32793,7 +32794,7 @@ module.exports = React.createClass({
 		var productElements = this.state.products.map(function (product) {
 			return React.createElement(
 				'table',
-				null,
+				{ 'class': 'centered striped' },
 				React.createElement(
 					'thead',
 					null,
@@ -32895,7 +32896,7 @@ module.exports = React.createClass({
 		var productElements = this.state.products.map(function (product) {
 			return React.createElement(
 				'table',
-				null,
+				{ 'class': 'responsive-table centered striped' },
 				React.createElement(
 					'thead',
 					null,
@@ -32914,7 +32915,7 @@ module.exports = React.createClass({
 						),
 						React.createElement(
 							'th',
-							{ 'data-field': 'price' },
+							{ 'data-field': 'type' },
 							'Type'
 						),
 						React.createElement(

@@ -25,12 +25,12 @@ module.exports = React.createClass({
 		var productElements = this.state.products
 		.map(function(product) {
 			return(
-				<table>
+				<table class="responsive-table centered striped">
 			        <thead>
 				          <tr>
 				              <th data-field="id">Name</th>
 				              <th data-field="name">Description</th>
-				              <th data-field="price">Type</th>
+				              <th data-field="type">Type</th>
 				              <th data-field="price">Price</th>
 				          </tr>
 			        </thead>

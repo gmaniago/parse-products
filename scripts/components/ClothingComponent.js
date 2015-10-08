@@ -25,7 +25,7 @@ module.exports = React.createClass({
 		var productElements = this.state.products
 		.map(function(product) {
 			return(
-			    <table>
+			    <table class="centered striped">
 			        <thead>
 				          <tr>
 				              <th data-field="id">Name</th>
@@ -44,8 +44,6 @@ module.exports = React.createClass({
 				          </tr>
 			        </tbody>
 		      	</table>
-		            
-
 			);
 		});
 
